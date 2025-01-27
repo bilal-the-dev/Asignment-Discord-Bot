@@ -60,6 +60,7 @@ const {
         const submitButton = new ButtonBuilder()
           .setCustomId('submit_assignment')
           .setEmoji("📤")
+          .setLabel('Open thread')
           .setStyle(ButtonStyle.Secondary);
   
 
