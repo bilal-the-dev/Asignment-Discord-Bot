@@ -61,10 +61,8 @@ const {
             reason: 'Assignment visibility thread created',
           });
 
-          console.log(thread)
           const mm = await thread.fetchStarterMessage()
-          console.log(mm)
-          await mm.delete(deb)
+          await mm.delete()
           console.log( thread.lastMessage)
 
       
