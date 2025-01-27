@@ -27,7 +27,7 @@ const {
           .setCustomId('channelName')
           .setLabel('Channel Name')
           .setStyle(TextInputStyle.Short)
-          .setPlaceholder('channel name where assignment will go')
+          .setPlaceholder('Write the channel name that bot will create!')
           .setRequired(true);
 
 
