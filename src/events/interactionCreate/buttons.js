@@ -67,7 +67,7 @@ const {
       
           // Send a message in the thread
           await thread.send({
-            content: `📝 ${interaction.user} here is your thread is for discussions regarding the assignment.`,
+            content: `📝 ${interaction.user} here is your thread for discussions regarding the assignment.`,
           });
       
           // Respond to the interaction
