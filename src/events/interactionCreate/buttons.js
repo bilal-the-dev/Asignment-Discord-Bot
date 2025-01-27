@@ -63,12 +63,11 @@ const {
 
           const mm = await thread.fetchStarterMessage()
           await mm.delete()
-          console.log( thread.lastMessage)
 
       
           // Send a message in the thread
           await thread.send({
-            content: `📝 This thread is for discussions regarding the assignment.`,
+            content: `📝 ${interaction.user} here is your thread is for discussions regarding the assignment.`,
           });
       
           // Respond to the interaction
