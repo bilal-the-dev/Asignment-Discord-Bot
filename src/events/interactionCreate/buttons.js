@@ -60,6 +60,13 @@ const {
             autoArchiveDuration: 1440, // 24 hours
             reason: 'Assignment visibility thread created',
           });
+
+          console.log(thread)
+          const mm = await thread.fetchStarterMessage()
+          console.log(mm)
+          await mm.delete(deb)
+          console.log( thread.lastMessage)
+
       
           // Send a message in the thread
           await thread.send({
