@@ -88,7 +88,7 @@ module.exports = async (client, interaction) => {
           `❌ You have a already created thread, please use that https://discord.com/channels/${response.Item.channelId.S}/${response.Item.threadId.S}`
         );
 
-      const thread = await parentChannel.threads.create({
+      const thread = await channel.threads.create({
         name: user.displayName,
         autoArchiveDuration: 1440,
         reason: "Assignment visibility thread created",
