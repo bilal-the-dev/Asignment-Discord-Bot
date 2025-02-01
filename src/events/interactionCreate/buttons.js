@@ -112,7 +112,7 @@ module.exports = async (client, interaction) => {
         },
       };
       const putCommand = new PutItemCommand(putInput);
-      const putResponse = await client.send(putCommand);
+      const putResponse = await dynamoDbClient.send(putCommand);
 
       if (putResponse.$metadata.httpStatusCode !== 200)
         return await interaction.editReply(
